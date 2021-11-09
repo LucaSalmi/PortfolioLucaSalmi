@@ -5,12 +5,12 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-public class RestaurantMenuActivity extends AppCompatActivity {
+public class BmiCalculatorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurant_menu);
+        setContentView(R.layout.activity_bmi_calculator);
 
         ViewPager gallery = findViewById(R.id.photo_gallery);
 

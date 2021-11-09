@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PortfolioLucaSalmi">
         <activity
+            android:name=".MyNotepadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BmiCalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".RestaurantMenuActivity"
             android:exported="false" />
         <activity
