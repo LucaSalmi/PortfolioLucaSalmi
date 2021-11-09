@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PortfolioLucaSalmi">
         <activity
+            android:name=".RestaurantMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".CalculatorActivity"
             android:exported="false" />
         <activity
