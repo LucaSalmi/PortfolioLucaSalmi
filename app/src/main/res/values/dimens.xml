@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_1">1dp</dimen>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="icon_height">76dp</dimen>
+    <dimen name="icon_width">156dp</dimen>
+    <dimen name="photo_sizes">50dp</dimen>
+    <dimen name="radius_25">25dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="gallery_height">450dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="photo_sizes_big_height">139dp</dimen>
+    <dimen name="photo_sizes_big_width">150dp</dimen>
+    <dimen name="corners_75">75dp</dimen>
 </resources>

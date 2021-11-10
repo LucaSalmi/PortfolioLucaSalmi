@@ -3,7 +3,11 @@ package com.example.portfoliolucasalmi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class ProjectActivity extends AppCompatActivity {
@@ -12,6 +16,7 @@ public class ProjectActivity extends AppCompatActivity {
     ViewPager gallery;
     TextView title;
     TextView description;
+    ImageButton gitHub;
 
 
     @Override
@@ -22,10 +27,21 @@ public class ProjectActivity extends AppCompatActivity {
          gallery = findViewById(R.id.photo_gallery);
          title = findViewById(R.id.project_title);
          description = findViewById(R.id.project_description);
+         gitHub = findViewById(R.id.gitHubLink);
 
          title.setText(getIntent().getStringExtra("Title"));
          description.setText(getIntent().getStringExtra("fullDescription"));
          sliderImageId = getIntent().getIntArrayExtra("photoArray");
+
+         gitHub.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+
+                 Uri l = Uri.parse(getIntent().getStringExtra("gitHubLink"));
+                 Intent link = new Intent(Intent.ACTION_VIEW, l);
+                 startActivity(link);
+             }
+         });
 
         ImageAdapter imageAdapter = new ImageAdapter(this, sliderImageId);
         gallery.setAdapter(imageAdapter);

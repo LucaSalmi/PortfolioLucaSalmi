@@ -5,15 +5,29 @@
     <string name="restaurant_title">Restaurant Menu</string>
     <string name="bmi_title">BMI Calculator</string>
     <string name="notepad_title">My Notepad</string>
-    <string name="calc_short_desc">A simple calculator created as a group project</string>
+    <string name="calc_short_desc">A simple calculator created as\n a group project</string>
     <string name="restaurant_short_desc">An interactive menu for a restaurant</string>
     <string name="bmi_short_desc">An app to calculate the users BMI</string>
-    <string name="notepad_short_desc">A notepad app with a shopping list function</string>
+    <string name="notepad_short_desc">A notepad app with\na shopping list function</string>
     <string name="calc_full_desc">A simple calculator app, created as a group project.\n
         The user can perform all the basic mathematical operations and calculate the area of a circle, the volume of a cylinder
         or the pythagorean theorem with the mathematical formulas clearly shown.\n
-    The result is shown in a specific field and the user can correct or clear all the fields.</string>
+    The result is shown in a specific field and the user can correct or clear all the fields.\n The link to the GitHub repository is in the top left corner of the page.</string>
     <string name="restaurant_full_desc">An interactive menu for a fictional restaurant, the main page leads to the different types of courses.\n
     A navigation arrow permits movement between all three categories and a info button describes the meaning of all possible allergens.\n
-    At the bottom the user can click on the telephone number or the e-mail and activate the appropriate app on the device to call or mail the restaurant </string>
+    At the bottom the user can click on the telephone number or the e-mail and activate the appropriate app on the device to call or mail the restaurant.
+        \n The link to the GitHub repository is in the top left corner of the page. </string>
+    <string name="bmi_full_desc">A simple app to calculate the user\'s BMI (Body Mass Index). It prompts the input of two values, height and weight, and then it performs a simple mathematical operation.\n
+        The height value can be written in cm, m or as a whole number without invalidating the calculation.\n The link to the GitHub repository is in the top left corner of the page.</string>
+    <string name="notepad_full_desc">An app to take simple notes and create shopping lists, built following the MVC architecture.\n
+    The notes are saved as text files in the device memory and can be modified and erased. The app checks if two note names repeat and corrects in case.\n
+    The shopping list function allows the user to add products, remove them and it can be re-opened and modified or erased later.\n The link to the GitHub repository is in the top left corner of the page. </string>
+    <string name="placeholder_title">Title</string>
+    <string name="label_contacts">Contacts</string>
+    <string name="label_about">About me</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="e_mail">luca.salmi90@gmail.com</string>
+    <string name="telephone">tel: 0765828872</string>
+    <string name="linkedIn">LinkedIn Page</string>
+    <string name="mail_sent_to">mailto:luca.salmi90@gmail.com</string>
 </resources>

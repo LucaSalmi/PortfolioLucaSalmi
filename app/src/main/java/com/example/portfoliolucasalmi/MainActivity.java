@@ -4,38 +4,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+
+import com.github.clans.fab.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    FloatingActionButton aboutMe;
+    FloatingActionButton contacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        aboutMe = findViewById(R.id.about_me_page_btn);
+        contacts = findViewById(R.id.contact_page_btn);
+
+
         ListData[] listDataArray = new ListData[]{
 
                 new ListData(getString(R.string.calc_title),
                         getString(R.string.calc_short_desc),
                         R.drawable.ic_baseline_calculate_24, ProjectActivity.class,
-                        photoArray(0), getString(R.string.calc_full_desc)),
+                        photoArray(0), getString(R.string.calc_full_desc), linkMaker(0)),
 
                 new ListData(getString(R.string.restaurant_title),
                         getString(R.string.restaurant_short_desc),
                         R.drawable.ic_baseline_restaurant_menu_24, ProjectActivity.class,
-                        photoArray(1), getString(R.string.restaurant_full_desc)),
+                        photoArray(1), getString(R.string.restaurant_full_desc), linkMaker(1)),
 
                 new ListData(getString(R.string.bmi_title),
                         getString(R.string.bmi_short_desc),
                         R.drawable.bmi_icon_48x48, ProjectActivity.class,
-                        photoArray(2), getString(R.string.placeholder_text)),
+                        photoArray(2), getString(R.string.bmi_full_desc), linkMaker(2)),
 
                 new ListData(getString(R.string.notepad_title),
                         getString(R.string.notepad_short_desc),
                         R.drawable.my_notepad_icon, ProjectActivity.class,
-                        photoArray(3), getString(R.string.placeholder_text))
+                        photoArray(3), getString(R.string.notepad_full_desc), linkMaker(3))
         };
 
         RecyclerView list = findViewById(R.id.recycler_list);
@@ -43,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
 
-
+        setListeners();
 
     }
 
@@ -101,5 +111,55 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return sliderImageId;
+    }
+
+    private String linkMaker(int linkId){
+
+        String link;
+
+        switch(linkId){
+            case 0:
+                 link = "https://github.com/LucaSalmi/Calculator-Grupp-4";
+                 break;
+            case 1:
+                link = "https://github.com/LucaSalmi/RestaurangsMeny";
+                break;
+            case 2:
+                link = "https://github.com/LucaSalmi/BMI-Calculator";
+                break;
+            case 3:
+                link = "https://github.com/LucaSalmi/My_Notepad";
+                break;
+            default:
+                link = "https://github.com/LucaSalmi";
+                break;
+        }
+        return link;
+    }
+
+    public void setListeners(){
+
+
+        aboutMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent floatingButtons = new Intent(MainActivity.this, AboutMeActivity.class);
+                startActivity(floatingButtons);
+
+            }
+        });
+
+        contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent floatingButtons = new Intent(MainActivity.this, ContactsActivity.class);
+                startActivity(floatingButtons);
+
+            }
+        });
+
+
+
     }
 }

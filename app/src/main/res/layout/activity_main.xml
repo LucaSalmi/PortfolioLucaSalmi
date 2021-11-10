@@ -12,12 +12,24 @@
         android:orientation="horizontal"
         android:id="@+id/title_layout">
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/radius_25">
+
+            <ImageView
+                android:layout_width="@dimen/photo_sizes"
+                android:layout_height="@dimen/photo_sizes"
+                android:src="@drawable/photo_resized"></ImageView>
+        </androidx.cardview.widget.CardView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:textSize="25sp"
-            android:textAlignment="textEnd"></TextView>
+            android:textSize="@dimen/title_size"
+            android:fontFamily="@font/roboto_slab"
+            android:textAlignment="center"></TextView>
 
 
     </LinearLayout>
@@ -27,5 +39,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title_layout"/>
+
+   <com.github.clans.fab.FloatingActionMenu
+       android:id="@+id/floating_menu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       app:menu_colorNormal="@color/black"
+       app:menu_colorRipple="@color/white"
+       app:menu_colorPressed="@color/white"
+       android:layout_marginRight="@dimen/margin_15"
+       android:layout_marginBottom="@dimen/margin_10">
+
+       <com.github.clans.fab.FloatingActionButton
+           android:id="@+id/contact_page_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:fabSize="mini"
+           app:fab_label="@string/label_contacts"
+           app:fab_colorNormal="@color/black"
+           app:fab_colorPressed="@color/white"
+           app:fab_colorRipple="@color/white"
+           android:src="@drawable/ic_baseline_contact_page_24"></com.github.clans.fab.FloatingActionButton>
+
+       <com.github.clans.fab.FloatingActionButton
+           android:id="@+id/about_me_page_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:fabSize="mini"
+           app:fab_label="@string/label_about"
+           android:src="@drawable/ic_baseline_person_24"
+           app:fab_colorNormal="@color/black"
+           app:fab_colorPressed="@color/white"
+           app:fab_colorRipple="@color/white"></com.github.clans.fab.FloatingActionButton>
+
+
+
+   </com.github.clans.fab.FloatingActionMenu>
+
+
+
 
 </RelativeLayout>

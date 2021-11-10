@@ -6,21 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".ProjectActivity">
 
-    <TextView
-        android:id="@+id/project_title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:layout_marginBottom="5dp"
-        android:text="Title"
-        android:fontFamily="serif"></TextView>
+        android:orientation="horizontal"
+        android:id="@+id/title_container">
+
+        <ImageButton
+            android:id="@+id/gitHubLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/github_logo_resize_48"
+            android:background="@color/transparent"></ImageButton>
+
+        <TextView
+            android:id="@+id/project_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"
+            android:text="@string/placeholder_title"
+            android:fontFamily="@font/roboto_slab"
+            android:paddingTop="@dimen/margin_5"></TextView>
+
+    </LinearLayout>
+
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/photo_gallery"
         android:layout_width="match_parent"
-        android:layout_below="@+id/project_title"
-        android:layout_height="450dp"
+        android:layout_below="@+id/title_container"
+        android:layout_height="@dimen/gallery_height"
         android:background="@color/black"
         ></androidx.viewpager.widget.ViewPager>
 
@@ -28,9 +45,11 @@
         android:id="@+id/project_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
         android:layout_below="@id/photo_gallery"
         android:text="@string/placeholder_text"
-        android:fontFamily="serif"></TextView>
+        android:fontFamily="@font/roboto_slab"></TextView>
 
 
 </RelativeLayout>

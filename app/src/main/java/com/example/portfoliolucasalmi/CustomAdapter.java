@@ -50,6 +50,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 intent.putExtra("photoArray", myListData.getPhotoArray());
                 intent.putExtra("Title", myListData.getTitle());
                 intent.putExtra("fullDescription", myListData.getFullDescription());
+                intent.putExtra("gitHubLink", myListData.getLink());
                 CONTEXT.startActivity(intent);
 
 

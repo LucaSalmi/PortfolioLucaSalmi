@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+
+    <TextView
+        android:id="@+id/title_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_slab"
+        android:text="@string/contacts_title"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/radius_25"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/title_contacts"
+        android:id="@+id/first_row"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:background="@drawable/frame">
+
+        <ImageButton
+            android:id="@+id/gitHub_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/github_logo_resize_48"
+            android:background="@color/transparent"
+            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub Page"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_12"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="@dimen/text_size"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/first_row"
+        android:id="@+id/second_row"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:background="@drawable/frame">
+
+        <ImageButton
+            android:id="@+id/mail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_contact_mail_48"
+            android:background="@color/transparent"
+            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e_mail"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_12"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="@dimen/text_size"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/second_row"
+        android:id="@+id/third_row"
+        android:background="@drawable/frame"
+        android:layout_marginBottom="@dimen/margin_15">
+
+        <ImageButton
+            android:id="@+id/phone_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_phone_24"
+            android:background="@color/transparent"
+            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephone"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_12"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="@dimen/text_size"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/third_row"
+        android:id="@+id/fourth_row"
+        android:background="@drawable/frame">
+
+        <ImageButton
+            android:id="@+id/linkedIn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linkedin_logo_48_black"
+            android:background="@color/transparent"
+            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linkedIn"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="@dimen/text_size"></TextView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
