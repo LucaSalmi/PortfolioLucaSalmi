@@ -17,10 +17,25 @@ public class MainActivity extends AppCompatActivity {
 
         ListData[] listDataArray = new ListData[]{
 
-                new ListData("Calculator App", "A simple calculator created as a group project", R.drawable.ic_baseline_calculate_24, CalculatorActivity.class),
-                new ListData("Restaurant Menu", "An interactive menu for a restaurant", R.drawable.ic_baseline_restaurant_menu_24, RestaurantMenuActivity.class),
-                new ListData("BMI Calculator", "An app to calculate the users BMI", R.drawable.bmi_icon_48x48, BmiCalculatorActivity.class),
-                new ListData("My Notepad", "A notepad app with a shopping list function", R.drawable.my_notepad_icon, MyNotepadActivity.class)
+                new ListData(getString(R.string.calc_title),
+                        getString(R.string.calc_short_desc),
+                        R.drawable.ic_baseline_calculate_24, ProjectActivity.class,
+                        photoArray(0), getString(R.string.calc_full_desc)),
+
+                new ListData(getString(R.string.restaurant_title),
+                        getString(R.string.restaurant_short_desc),
+                        R.drawable.ic_baseline_restaurant_menu_24, ProjectActivity.class,
+                        photoArray(1), getString(R.string.placeholder_text)),
+
+                new ListData(getString(R.string.bmi_title),
+                        getString(R.string.bmi_short_desc),
+                        R.drawable.bmi_icon_48x48, ProjectActivity.class,
+                        photoArray(2), getString(R.string.placeholder_text)),
+
+                new ListData(getString(R.string.notepad_title),
+                        getString(R.string.notepad_short_desc),
+                        R.drawable.my_notepad_icon, ProjectActivity.class,
+                        photoArray(3), getString(R.string.placeholder_text))
         };
 
         RecyclerView list = findViewById(R.id.recycler_list);
@@ -30,5 +45,61 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+
+    public int[] photoArray(int id){
+
+        int[] sliderImageId;
+
+        switch(id){
+
+            case 0:
+
+                sliderImageId = new int[]{
+
+                        R.drawable.calculator_screen_1,
+                        R.drawable.calculator_screen_2,
+                        R.drawable.calculator_screen_3,
+                        R.drawable.calculator_screen_4,
+                };
+                break;
+
+            case 1:
+
+                sliderImageId = new int[]{
+
+                        R.drawable.restaurant_menu_1,
+                        R.drawable.restaurant_menu_2,
+                        R.drawable.restaurant_menu_3,
+                };
+                break;
+
+            case 2:
+
+                sliderImageId = new int[]{
+
+                        R.drawable.bmi_screenshot_1,
+                        R.drawable.bmi_screenshot_2,
+                };
+                break;
+
+            case 3:
+
+                sliderImageId = new int[]{
+
+                        R.drawable.notepad_screenshot_1,
+                        R.drawable.notepad_screenshot_2,
+                        R.drawable.notepad_screenshot_3,
+                };
+                break;
+
+            default:
+                sliderImageId = new int[]{
+                };
+                break;
+        }
+
+        return sliderImageId;
     }
 }

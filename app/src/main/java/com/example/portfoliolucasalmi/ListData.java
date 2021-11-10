@@ -2,9 +2,27 @@ package com.example.portfoliolucasalmi;
 
 public class ListData {
     private String title;
-    private String description;
+    private String shortDescription;
     private int imgId;
     private Class activity;
+    private int[] photoArray;
+    private String fullDescription;
+
+    public int[] getPhotoArray() {
+        return photoArray;
+    }
+
+    public void setPhotoArray(int[] photoArray) {
+        this.photoArray = photoArray;
+    }
+
+    public String getFullDescription() {
+        return fullDescription;
+    }
+
+    public void setFullDescription(String fullDescription) {
+        this.fullDescription = fullDescription;
+    }
 
     public Class getActivity() {
         return activity;
@@ -22,12 +40,12 @@ public class ListData {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getShortDescription() {
+        return shortDescription;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
     }
 
     public int getImgId() {
@@ -38,10 +56,13 @@ public class ListData {
         this.imgId = imgId;
     }
 
-    public ListData(String title, String description, int imgId, Class activity) {
+    public ListData(String title, String shortDescription, int imgId, Class activity, int[] photoArray, String fullDescription) {
         this.title = title;
-        this.description = description;
+        this.shortDescription = shortDescription;
         this.imgId = imgId;
         this.activity = activity;
+        this.photoArray = photoArray;
+        this.fullDescription = fullDescription;
+
     }
 }

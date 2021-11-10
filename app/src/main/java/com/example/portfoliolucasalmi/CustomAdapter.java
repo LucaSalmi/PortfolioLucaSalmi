@@ -10,10 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder>{
 
@@ -41,7 +38,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         final ListData myListData = listData[position];
 
         holder.titleView.setText(listData[position].getTitle());
-        holder.descriptionView.setText(listData[position].getDescription());
+        holder.descriptionView.setText(listData[position].getShortDescription());
         holder.imageView.setImageResource(listData[position].getImgId());
 
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +47,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
 
                 Intent intent = new Intent(CONTEXT, myListData.getActivity());
+                intent.putExtra("photoArray", myListData.getPhotoArray());
+                intent.putExtra("Title", myListData.getTitle());
+                intent.putExtra("fullDescription", myListData.getFullDescription());
                 CONTEXT.startActivity(intent);
 
 

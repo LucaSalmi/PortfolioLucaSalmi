@@ -27,6 +27,7 @@ public class ImageAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         ImageView imageView = new ImageView(mContext);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        imageView.setAdjustViewBounds(true);
         imageView.setImageResource(sliderImageId[position]);
         ((ViewPager) container).addView(imageView, 0);
         return imageView;
@@ -36,6 +37,8 @@ public class ImageAdapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
         ((ViewPager) container).removeView((ImageView) object);
     }
+
+
 
     @Override
     public int getCount() {
