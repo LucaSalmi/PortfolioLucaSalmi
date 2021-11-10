@@ -24,24 +24,24 @@ public class ProjectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project);
 
-         gallery = findViewById(R.id.photo_gallery);
-         title = findViewById(R.id.project_title);
-         description = findViewById(R.id.project_description);
-         gitHub = findViewById(R.id.gitHubLink);
+        gallery = findViewById(R.id.photo_gallery);
+        title = findViewById(R.id.project_title);
+        description = findViewById(R.id.project_description);
+        gitHub = findViewById(R.id.gitHubLink);
 
-         title.setText(getIntent().getStringExtra("Title"));
-         description.setText(getIntent().getStringExtra("fullDescription"));
-         sliderImageId = getIntent().getIntArrayExtra("photoArray");
+        title.setText(getIntent().getStringExtra("Title"));
+        description.setText(getIntent().getStringExtra("fullDescription"));
+        sliderImageId = getIntent().getIntArrayExtra("photoArray");
 
-         gitHub.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
+        gitHub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-                 Uri l = Uri.parse(getIntent().getStringExtra("gitHubLink"));
-                 Intent link = new Intent(Intent.ACTION_VIEW, l);
-                 startActivity(link);
-             }
-         });
+                Uri l = Uri.parse(getIntent().getStringExtra("gitHubLink"));
+                Intent link = new Intent(Intent.ACTION_VIEW, l);
+                startActivity(link);
+            }
+        });
 
         ImageAdapter imageAdapter = new ImageAdapter(this, sliderImageId);
         gallery.setAdapter(imageAdapter);

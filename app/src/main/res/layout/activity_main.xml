@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/title_layout">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -26,10 +26,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="@dimen/title_size"
             android:fontFamily="@font/roboto_slab"
-            android:textAlignment="center"></TextView>
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_size"></TextView>
 
 
     </LinearLayout>
@@ -38,47 +38,44 @@
         android:id="@+id/recycler_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_layout"/>
+        android:layout_below="@id/title_layout" />
 
-   <com.github.clans.fab.FloatingActionMenu
-       android:id="@+id/floating_menu"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:layout_alignParentRight="true"
-       app:menu_colorNormal="@color/black"
-       app:menu_colorRipple="@color/white"
-       app:menu_colorPressed="@color/white"
-       android:layout_marginRight="@dimen/margin_15"
-       android:layout_marginBottom="@dimen/margin_10">
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_10"
+        app:menu_colorNormal="@color/black"
+        app:menu_colorPressed="@color/white"
+        app:menu_colorRipple="@color/white">
 
-       <com.github.clans.fab.FloatingActionButton
-           android:id="@+id/contact_page_btn"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           app:fabSize="mini"
-           app:fab_label="@string/label_contacts"
-           app:fab_colorNormal="@color/black"
-           app:fab_colorPressed="@color/white"
-           app:fab_colorRipple="@color/white"
-           android:src="@drawable/ic_baseline_contact_page_24"></com.github.clans.fab.FloatingActionButton>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/contact_page_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_contact_page_24"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/black"
+            app:fab_colorPressed="@color/white"
+            app:fab_colorRipple="@color/white"
+            app:fab_label="@string/label_contacts"></com.github.clans.fab.FloatingActionButton>
 
-       <com.github.clans.fab.FloatingActionButton
-           android:id="@+id/about_me_page_btn"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           app:fabSize="mini"
-           app:fab_label="@string/label_about"
-           android:src="@drawable/ic_baseline_person_24"
-           app:fab_colorNormal="@color/black"
-           app:fab_colorPressed="@color/white"
-           app:fab_colorRipple="@color/white"></com.github.clans.fab.FloatingActionButton>
-
-
-
-   </com.github.clans.fab.FloatingActionMenu>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/about_me_page_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_person_24"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/black"
+            app:fab_colorPressed="@color/white"
+            app:fab_colorRipple="@color/white"
+            app:fab_label="@string/label_about"></com.github.clans.fab.FloatingActionButton>
 
 
+    </com.github.clans.fab.FloatingActionMenu>
 
 
 </RelativeLayout>

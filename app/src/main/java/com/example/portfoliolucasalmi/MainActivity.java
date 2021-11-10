@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public int[] photoArray(int id){
+    public int[] photoArray(int id) {
 
         int[] sliderImageId;
 
-        switch(id){
+        switch (id) {
 
             case 0:
 
@@ -113,14 +113,14 @@ public class MainActivity extends AppCompatActivity {
         return sliderImageId;
     }
 
-    private String linkMaker(int linkId){
+    private String linkMaker(int linkId) {
 
         String link;
 
-        switch(linkId){
+        switch (linkId) {
             case 0:
-                 link = "https://github.com/LucaSalmi/Calculator-Grupp-4";
-                 break;
+                link = "https://github.com/LucaSalmi/Calculator-Grupp-4";
+                break;
             case 1:
                 link = "https://github.com/LucaSalmi/RestaurangsMeny";
                 break;
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         return link;
     }
 
-    public void setListeners(){
+    public void setListeners() {
 
 
         aboutMe.setOnClickListener(new View.OnClickListener() {
@@ -158,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
 
     }
