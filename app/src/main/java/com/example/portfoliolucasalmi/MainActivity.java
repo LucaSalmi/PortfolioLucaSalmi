@@ -24,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
         aboutMe = findViewById(R.id.about_me_page_btn);
         contacts = findViewById(R.id.contact_page_btn);
 
+        RecyclerView list = findViewById(R.id.recycler_list);
+        CustomAdapter adapter = new CustomAdapter(arrayGenerator(), MainActivity.this);
+        list.setLayoutManager(new LinearLayoutManager(this));
+        list.setAdapter(adapter);
+
+        setListeners();
+
+    }
+
+    public ListData[] arrayGenerator(){
 
         ListData[] listDataArray = new ListData[]{
 
@@ -48,13 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         photoArray(3), getString(R.string.notepad_full_desc), linkMaker(3))
         };
 
-        RecyclerView list = findViewById(R.id.recycler_list);
-        CustomAdapter adapter = new CustomAdapter(listDataArray, MainActivity.this);
-        list.setLayoutManager(new LinearLayoutManager(this));
-        list.setAdapter(adapter);
-
-        setListeners();
-
+        return listDataArray;
     }
 
 
