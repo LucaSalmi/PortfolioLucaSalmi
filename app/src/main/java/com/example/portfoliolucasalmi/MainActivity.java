@@ -11,8 +11,8 @@ import android.view.View;
 
 import com.github.clans.fab.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
     FloatingActionButton aboutMe;
     FloatingActionButton contacts;
 
