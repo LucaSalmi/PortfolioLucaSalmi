@@ -21,7 +21,8 @@
         </activity>
         <activity
             android:name=".ProjectActivity"
-            android:exported="false"></activity>
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

@@ -13,4 +13,7 @@
         The user can perform all the basic mathematical operations and calculate the area of a circle, the volume of a cylinder
         or the pythagorean theorem with the mathematical formulas clearly shown.\n
     The result is shown in a specific field and the user can correct or clear all the fields.</string>
+    <string name="restaurant_full_desc">An interactive menu for a fictional restaurant, the main page leads to the different types of courses.\n
+    A navigation arrow permits movement between all three categories and a info button describes the meaning of all possible allergens.\n
+    At the bottom the user can click on the telephone number or the e-mail and activate the appropriate app on the device to call or mail the restaurant </string>
 </resources>

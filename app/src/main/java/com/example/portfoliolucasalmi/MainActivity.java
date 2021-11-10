@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 new ListData(getString(R.string.restaurant_title),
                         getString(R.string.restaurant_short_desc),
                         R.drawable.ic_baseline_restaurant_menu_24, ProjectActivity.class,
-                        photoArray(1), getString(R.string.placeholder_text)),
+                        photoArray(1), getString(R.string.restaurant_full_desc)),
 
                 new ListData(getString(R.string.bmi_title),
                         getString(R.string.bmi_short_desc),
