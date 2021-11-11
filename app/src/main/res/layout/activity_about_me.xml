@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutMeActivity">
+    tools:context=".AboutMeActivity"
+    android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/title_about"
@@ -36,11 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/photo"
-        android:layout_marginLeft="@dimen/margin_15"
-        android:layout_marginTop="@dimen/margin_15"
-        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/margin_5"
         android:fontFamily="@font/roboto_slab"
-        android:text="@string/placeholder_text"
+        android:text="@string/about_me_text"
         android:textSize="@dimen/text_size"></TextView>
 
 </RelativeLayout>

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public ListData[] arrayGenerator(){
+    public ListData[] arrayGenerator() {
 
         ListData[] listDataArray = new ListData[]{
 
@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                         getString(R.string.notepad_short_desc),
                         R.drawable.my_notepad_icon, ProjectActivity.class,
                         photoArray(3), getString(R.string.notepad_full_desc), linkMaker(3))
+
+
         };
 
         return listDataArray;

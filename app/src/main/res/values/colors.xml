@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00F44336</color>
+    <color name="grad_start">#cfd9df</color>
+    <color name="grad_stop">#e2ebf0</color>
 </resources>

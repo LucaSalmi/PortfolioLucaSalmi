@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProjectActivity">
+    tools:context=".ProjectActivity"
+    android:background="@drawable/gradient">
 
     <LinearLayout
         android:id="@+id/title_container"
@@ -36,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/gallery_height"
         android:layout_below="@+id/title_container"
-        android:background="@color/black"></androidx.viewpager.widget.ViewPager>
+        ></androidx.viewpager.widget.ViewPager>
 
     <TextView
         android:id="@+id/project_description"

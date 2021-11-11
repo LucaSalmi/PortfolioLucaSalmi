@@ -8,24 +8,27 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class ContactsActivity extends AppCompatActivity {
 
-    ImageButton gitHub;
-    ImageButton mail;
-    ImageButton telephone;
-    ImageButton linkedIn;
+
+    LinearLayout firstRow;
+    LinearLayout secondRow;
+    LinearLayout thirdRow;
+    LinearLayout fourthRow;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts);
 
-        gitHub = findViewById(R.id.gitHub_btn);
-        mail = findViewById(R.id.mail_btn);
-        telephone = findViewById(R.id.phone_btn);
-        linkedIn = findViewById(R.id.linkedIn_btn);
+        firstRow = findViewById(R.id.first_row);
+        secondRow = findViewById(R.id.second_row);
+        thirdRow = findViewById(R.id.third_row);
+        fourthRow = findViewById(R.id.fourth_row);
 
         setListeners();
     }
@@ -33,7 +36,7 @@ public class ContactsActivity extends AppCompatActivity {
     public void setListeners(){
 
 
-        gitHub.setOnClickListener(new View.OnClickListener() {
+        firstRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -44,7 +47,7 @@ public class ContactsActivity extends AppCompatActivity {
             }
         });
 
-        mail.setOnClickListener(new View.OnClickListener() {
+        secondRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -61,7 +64,7 @@ public class ContactsActivity extends AppCompatActivity {
             }
         });
 
-        telephone.setOnClickListener(new View.OnClickListener() {
+        thirdRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -72,7 +75,7 @@ public class ContactsActivity extends AppCompatActivity {
             }
         });
 
-        linkedIn.setOnClickListener(new View.OnClickListener() {
+        fourthRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

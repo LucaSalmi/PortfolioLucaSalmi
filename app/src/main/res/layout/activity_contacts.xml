@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactsActivity">
+    tools:context=".ContactsActivity"
+    android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/title_contacts"
@@ -26,13 +27,13 @@
         android:layout_marginBottom="@dimen/margin_15"
         android:background="@drawable/frame">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/gitHub_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/github_logo_resize_48"
             android:background="@color/transparent"
-            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+            android:layout_marginLeft="@dimen/margin_15"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,29 +47,29 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/second_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/first_row"
-        android:id="@+id/second_row"
         android:layout_marginBottom="@dimen/margin_15"
-        android:background="@drawable/frame">
+        android:background="@drawable/frame"
+        android:orientation="horizontal">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/mail_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_contact_mail_48"
+            android:layout_marginLeft="@dimen/margin_15"
             android:background="@color/transparent"
-            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+            android:src="@drawable/ic_baseline_contact_mail_48"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/e_mail"
             android:layout_marginLeft="@dimen/margin_15"
             android:layout_marginTop="@dimen/margin_12"
             android:fontFamily="@font/roboto_slab"
+            android:text="@string/e_mail"
             android:textSize="@dimen/text_size"></TextView>
 
     </LinearLayout>
@@ -82,13 +83,13 @@
         android:background="@drawable/frame"
         android:layout_marginBottom="@dimen/margin_15">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/phone_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_phone_24"
             android:background="@color/transparent"
-            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+            android:layout_marginLeft="@dimen/margin_15"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -109,13 +110,13 @@
         android:id="@+id/fourth_row"
         android:background="@drawable/frame">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/linkedIn_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/linkedin_logo_48_black"
             android:background="@color/transparent"
-            android:layout_marginLeft="@dimen/margin_15"></ImageButton>
+            android:layout_marginLeft="@dimen/margin_15"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"

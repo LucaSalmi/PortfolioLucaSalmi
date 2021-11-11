@@ -30,4 +30,11 @@
     <string name="telephone">tel: 0765828872</string>
     <string name="linkedIn">LinkedIn Page</string>
     <string name="mail_sent_to">mailto:luca.salmi90@gmail.com</string>
+    <string name="about_me_text">Originally from Italy, I moved to Sweden in 2016.\n While always being interested in technology and programming, I didn\'t pursue a career in IT until 2021 when I started a course in App Development at KHY in Stockholm.\n
+    There I was able to expand on my self-taught knowledge in programming ( C++, Java, HTML, Javascript and the Unity Game Engine), learning Kotlin, Swift,\n
+        Android Studio, XCode, Git, Github, API and Databases, Native Development, Bug-fixing, responsive web-design, Architectural models (MVC, MVVA, MVP) and Agile based work-models.\n
+    Beside everything listed before, my two years program gave me the opportunity to apply all of the above in a practical way through personal and group projects, some of those presented in this app.\n
+        Other then technical knowledge I have a very curios mind, good problem solving skills and I try to be as helpful as much as possible to everyone around me. Even if I prefer to do most of my work alone.\n
+        Because of my previous work experiences I have developed great social skills beside being able to speak and write fluently in three languages (Italian, English and Swedish).
+    </string>
 </resources>
