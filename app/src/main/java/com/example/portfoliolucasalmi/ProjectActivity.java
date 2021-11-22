@@ -1,14 +1,14 @@
 package com.example.portfoliolucasalmi;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 public class ProjectActivity extends AppCompatActivity {
 
@@ -37,8 +37,8 @@ public class ProjectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Uri l = Uri.parse(getIntent().getStringExtra("gitHubLink"));
-                Intent link = new Intent(Intent.ACTION_VIEW, l);
+                Uri gitHubLink = Uri.parse(getIntent().getStringExtra("gitHubLink"));
+                Intent link = new Intent(Intent.ACTION_VIEW, gitHubLink);
                 startActivity(link);
             }
         });
