@@ -1,7 +1,5 @@
 package com.example.portfoliolucasalmi;
 
-import android.net.Uri;
-
 public class ListData {
     private String title;
     private String shortDescription;
@@ -68,6 +66,7 @@ public class ListData {
     }
 
     public ListData(String title, String shortDescription, int imgId, Class activity, int[] photoArray, String fullDescription, String link) {
+
         this.title = title;
         this.shortDescription = shortDescription;
         this.imgId = imgId;
@@ -75,6 +74,7 @@ public class ListData {
         this.photoArray = photoArray;
         this.fullDescription = fullDescription;
         this.link = link;
+
 
     }
 }

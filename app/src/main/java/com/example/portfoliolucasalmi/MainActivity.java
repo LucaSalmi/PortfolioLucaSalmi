@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         contacts = findViewById(R.id.contact_page_btn);
 
         RecyclerView list = findViewById(R.id.recycler_list);
-        CustomAdapter adapter = new CustomAdapter(arrayGenerator(), MainActivity.this);
+        CustomAdapter adapter = new CustomAdapter(ObjectGenerator.arrayGenerator(this), MainActivity.this);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
 

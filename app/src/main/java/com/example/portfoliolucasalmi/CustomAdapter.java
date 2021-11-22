@@ -19,9 +19,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
 
     public CustomAdapter(ListData[] listData, Context context) {
+
         this.listData = listData;
         this.CONTEXT = context;
-
 
     }
 
@@ -45,7 +45,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             @Override
             public void onClick(View view) {
 
-
                 Intent intent = new Intent(CONTEXT, myListData.getActivity());
                 intent.putExtra("photoArray", myListData.getPhotoArray());
                 intent.putExtra("Title", myListData.getTitle());
@@ -53,12 +52,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 intent.putExtra("gitHubLink", myListData.getLink());
                 CONTEXT.startActivity(intent);
 
-
             }
         });
 
     }
-
 
     @Override
     public int getItemCount() {
@@ -73,6 +70,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         public ImageView imageView;
 
         public ViewHolder(View itemView) {
+
             super(itemView);
             this.titleView = (TextView) itemView.findViewById(R.id.title_text);
             this.descriptionView = (TextView) itemView.findViewById(R.id.description_text);

@@ -15,15 +15,17 @@
         android:layout_marginBottom="@dimen/margin_15">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/radius_25">
+            android:layout_width="@dimen/photo_sizes"
+            android:layout_height="@dimen/photo_sizes"
+            app:cardCornerRadius="@dimen/radius_25"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_5">
 
             <ImageView
                 android:layout_width="@dimen/photo_sizes"
                 android:layout_height="@dimen/photo_sizes"
                 android:src="@drawable/photo_resized"
-                android:layout_marginTop="@dimen/margin_5"></ImageView>
+                ></ImageView>
         </androidx.cardview.widget.CardView>
 
         <TextView

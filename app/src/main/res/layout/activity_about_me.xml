@@ -33,15 +33,21 @@
 
     </androidx.cardview.widget.CardView>
 
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/photo">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/photo"
         android:layout_marginLeft="@dimen/margin_5"
         android:layout_marginTop="20dp"
         android:layout_marginRight="@dimen/margin_5"
         android:fontFamily="@font/roboto_slab"
+        android:scrollbars="vertical"
         android:text="@string/about_me_text"
         android:textSize="@dimen/text_size"></TextView>
 
+</ScrollView>
 </RelativeLayout>
